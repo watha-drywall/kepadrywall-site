@@ -138,8 +138,6 @@ strong { color: var(--ink); }
 .standards p { margin: 0; color: var(--muted); padding-left: 22px; }
 
 /* Towns */
-.towns { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); border-top: 1px solid var(--line); }
-.towns li { padding: 16px 0; border-bottom: 1px solid var(--line); font: 700 1.3rem/1.1 var(--cond); text-transform: uppercase; color: var(--ink); letter-spacing: .01em; }
 
 /* About */
 .prose p { font-size: 1.12rem; max-width: 62ch; }
