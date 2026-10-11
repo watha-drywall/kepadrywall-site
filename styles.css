@@ -177,9 +177,6 @@ textarea { resize: vertical; min-height: 130px; }
 input:hover, select:hover, textarea:hover { border-color: #545A60; }
 input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 0; border-color: var(--yellow); box-shadow: 0 0 0 1px var(--yellow); }
 [aria-invalid="true"] { border-color: var(--danger) !important; }
-.checkbox { display: flex; gap: 12px; align-items: flex-start; }
-.checkbox input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--yellow); flex: none; }
-.checkbox label { font: 400 1rem/1.5 var(--sans); letter-spacing: 0; text-transform: none; color: var(--body); }
 .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .form-footer { display: grid; gap: 14px; margin-top: 4px; }
 .form-footer .btn { justify-self: start; }

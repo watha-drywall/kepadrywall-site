@@ -38,7 +38,6 @@
       'City/township: ' + data.city,
       'Type of work: ' + data.work_type,
       'Year built: ' + (data.year_built || 'Not sure'),
-      'OK to text: ' + (data.ok_to_text ? 'yes' : 'no'),
       '',
       data.details
     ];
@@ -72,7 +71,6 @@
       city: fd.get('city').trim(),
       work_type: fd.get('work_type'),
       year_built: fd.get('year_built') || 'Not sure',
-      ok_to_text: fd.get('ok_to_text') ? 'yes' : 'no',
       details: fd.get('details').trim()
     };
 
