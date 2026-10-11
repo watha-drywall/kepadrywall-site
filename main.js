@@ -1,7 +1,7 @@
-// Estimate form: sends the request to watha@kepadrywall.com through FormSubmit (formsubmit.co).
+// Estimate form: sends the request to the Kepa inbox through FormSubmit (formsubmit.co).
 // If that service is down, the visitor gets a ready-made email to send instead, so no lead is lost.
 (function () {
-  var TO = 'watha@kepadrywall.com';
+  var TO = 'hello@kepadrywall.com';
   // FormSubmit's private alias for TO (activated 2026-10-10), so the address isn't exposed in the request URL.
   var ENDPOINT = 'https://formsubmit.co/ajax/e2ab1040946db3d5e3f580ba267f3a02';
 
