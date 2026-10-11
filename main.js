@@ -7,6 +7,18 @@
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Links to a FAQ answer (e.g. "#faq-asbestos") open that answer, not just scroll to its closed heading.
+  function openDetails(id) {
+    var el = id && document.getElementById(id);
+    if (el && el.tagName === 'DETAILS') el.open = true;
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (a) openDetails(a.getAttribute('href').slice(1));
+  });
+  window.addEventListener('hashchange', function () { openDetails(location.hash.slice(1)); });
+  openDetails(location.hash.slice(1));
+
   var form = document.getElementById('estimate-form');
   if (!form) return;
   var status = document.getElementById('form-status');
