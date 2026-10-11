@@ -2,7 +2,8 @@
 // If that service is down, the visitor gets a ready-made email to send instead, so no lead is lost.
 (function () {
   var TO = 'watha@kepadrywall.com';
-  var ENDPOINT = 'https://formsubmit.co/ajax/' + TO;
+  // FormSubmit's private alias for TO (activated 2026-10-10), so the address isn't exposed in the request URL.
+  var ENDPOINT = 'https://formsubmit.co/ajax/e2ab1040946db3d5e3f580ba267f3a02';
 
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
