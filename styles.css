@@ -159,7 +159,7 @@ strong { color: var(--ink); }
 .faq details p { color: var(--body); margin: 0 0 18px; max-width: 64ch; }
 
 /* Estimate form */
-.estimate { background: var(--bg); }
+.estimate { background: var(--bg-alt); border-top: 1px solid var(--line); }
 .estimate-form { display: grid; gap: 18px; grid-template-columns: 1fr; background: var(--tile); border-top: 4px solid var(--yellow); padding: 28px 22px; }
 @media (min-width: 560px) { .estimate-form { grid-template-columns: 1fr 1fr; padding: 36px 32px; } .field-full { grid-column: 1 / -1; } }
 .field { display: grid; gap: 8px; align-content: start; }
